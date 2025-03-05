@@ -9,6 +9,15 @@ package util;
  *
  * @author it-seekers
  */
-public class Result {
+public class Result<T> {
 
+    private boolean success;
+    private T data;
+    private String message
+
+    public static void success {
+    }
+
+    public static void failure{
+    }
 }
