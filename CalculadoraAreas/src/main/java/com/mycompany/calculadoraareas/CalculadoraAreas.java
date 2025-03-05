@@ -4,6 +4,11 @@
 
 package com.mycompany.calculadoraareas;
 
+import com.mycompany.figuras.calcularArea;
+import com.mycompany.figuras.triangulo;
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  *
  * @author it-seekers
@@ -11,6 +16,8 @@ package com.mycompany.calculadoraareas;
 public class CalculadoraAreas {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Map<Integer,calcularArea>calculadoraAreas = new HashMap<>();
+        
+        System.out.println(calculadoraAreas.put(1,new calcularArea(new triangulo())));
     }
 }

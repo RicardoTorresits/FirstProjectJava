@@ -4,10 +4,15 @@
  */
 package com.mycompany.figuras;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  *
  * @author it-seekers
  */
 public interface FiguraGeometrica {
     double calcularArea();
+    
+    
 }
