@@ -9,7 +9,7 @@ package com.mycompany.figuras;
  *
  * @author it-seekers
  */
-public class triangulo {
+public class triangulo implements FiguraGeometrica {
     private double base;
     private double altura;
     
@@ -34,5 +34,13 @@ public class triangulo {
 
     public void setBase(double base) {
         this.base = base;
+    }
+    
+    @Override
+    public double calcularArea(){
+        
+        double restult = (getBase() * getAltura())/2;
+        
+        return restult;
     }
 }

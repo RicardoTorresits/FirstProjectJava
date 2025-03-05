@@ -11,7 +11,7 @@ package com.mycompany.figuras;
  */
 
 
-public class circulo {
+public class circulo implements FiguraGeometrica {
     
     private double radio;
     
@@ -28,5 +28,12 @@ public class circulo {
     public void setRadio(double radio) {
         this.radio = radio;
     }
+    
+    @Override
+    public double calcularArea(){
+        double restult = Math.pow(Math.PI * getRadio(),2);
+        return restult;
+    }
+
 
 }

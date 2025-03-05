@@ -9,7 +9,7 @@ package com.mycompany.figuras;
  *
  * @author it-seekers
  */
-public class cuadrilatero {
+public class cuadrilatero implements FiguraGeometrica {
     private double base;
 
     
@@ -38,8 +38,13 @@ public class cuadrilatero {
         this.base = base;
     }
 
-  
-
+    @Override
+    public double calcularArea(){
+        
+        double restult = (getBase() * getAltura());
+        
+        return restult;
+    }
 
 
 }

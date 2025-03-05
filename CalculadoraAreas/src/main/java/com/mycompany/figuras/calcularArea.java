@@ -11,8 +11,23 @@ package com.mycompany.figuras;
  */
 public class calcularArea {
 
-    public calcularArea(triangulo triangulo) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    private FiguraGeometrica figura;
+
+    public calcularArea(){}
+    
+    public calcularArea(FiguraGeometrica figura) {
+        this.figura = figura;
     }
 
+    public FiguraGeometrica getFigura() {
+        return figura;
+    }
+
+    public void setFigura(FiguraGeometrica figura) {
+        this.figura = figura;
+    }
+    
+    public double calcular(){
+        return this.figura.calcularArea();
+    }
 }
